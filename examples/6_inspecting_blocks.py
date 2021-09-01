@@ -1,5 +1,5 @@
 from web3 import Web3
-
+#u can read transaction from ethscan for example
 # Fill in your infura API key here
 infura_url = "https://mainnet.infura.io/v3/YOUR_INFURA_API_KEY_GOES_HERE"
 web3 = Web3(Web3.HTTPProvider(infura_url))
