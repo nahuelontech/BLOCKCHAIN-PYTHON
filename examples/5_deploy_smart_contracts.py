@@ -1,7 +1,7 @@
 import json
 from web3 import Web3
-
-# Set up web3 connection with Ganache
+#We are gonna deploy the SC from remix to the blockchain local that we have with ganaSHE
+# Set up web3 connection with Ganache, and check if u are connected, last block, copy ABI...
 ganache_url = "http://127.0.0.1:7545"
 web3 = Web3(Web3.HTTPProvider(ganache_url))
 
@@ -11,7 +11,7 @@ bytecode = "6060604052341561000f57600080fd5b604080519081016040528060058152602001
 # # set pre-funded account as sender
 web3.eth.defaultAccount = web3.eth.accounts[0]
 
-# # Instantiate and deploy contract
+# # Instantiate and deploy contract 
 Greeter = web3.eth.contract(abi=abi, bytecode=bytecode)
 
 # # Submit the transaction that deploys the contract
